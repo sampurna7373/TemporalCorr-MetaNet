@@ -14,16 +14,6 @@ TemporalCorr-MetaNet introduces a novel **lightweight** approach (~750K paramete
 2. **Adaptive Temporal Similarity Matrices (ATSM)**: Class-specific temporal feature scaling with meta-learnable temperature
 3. **Meta-Learned Change Boundaries (MCB)**: Adaptive thresholds that generalize across domains
 
-## 🏆 Key Results
-
-| Dataset | mIoU | F1 Score | Parameters |
-|---------|------|----------|------------|
-| EGY-BCD | 82.5% | 89.2% | 750K |
-| WHU | 83.1% | 90.1% | 750K |
-| LEVIR-CD | 80.2% | 87.8% | 750K |
-| S2Looking | 78.4% | 85.6% | 750K |
-| **Average** | **81.0%** | **88.2%** | **750K** |
-
 **Comparison**: 21x smaller than STeInFormer (15.8M params) with comparable accuracy.
 
 ## 🏗️ Architecture
@@ -169,14 +159,6 @@ Key hyperparameters (from technical document Appendix A):
 | `max_episodes` | 10,000 | Total training episodes |
 | `focal_alpha` | 0.25 | Focal loss alpha |
 | `focal_gamma` | 2.0 | Focal loss gamma |
-
-## 📊 Few-Shot Performance
-
-| K-shot | EGY-BCD | WHU | LEVIR-CD | S2Looking |
-|--------|---------|-----|----------|-----------|
-| 1-shot | 68.2% | 67.5% | 65.8% | 63.2% |
-| 5-shot | 78.5% | 79.1% | 76.4% | 74.8% |
-| 10-shot | 82.5% | 83.1% | 80.2% | 78.4% |
 
 ## 🔬 Technical Details
 
